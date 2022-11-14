@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KC28TS4RKY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KC28TS4RKY');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 1: Understanding the Hydrogen Atom</title>
+
+  <link href="./style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
+
+  <script src="./scroll.js"></script>
+  <script src="./time_graph.json"></script>
+  <script src="./ball.js"></script>
+  <script src="./sketch.js"></script>
+  <script src="./graph.js"></script>
+  <script src="./circle.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+  <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<body id="body_parent" onload="StartScroll()">
+  <a href="../index.html"><img id="back-icon" src="../images/arrow-left.svg" /></a>
+  <div class="container">
+    <div class="row title-row">
+      <h1 class="col-lg-12">DOPING</h1>
+      <div class="col-lg-1"></div>
+      <p class="col-lg-10">
+        To modulate electrical or optical properties of a semiconductors,
+        impurities are added to a pure (intrinsic) semiconductor. This process is called “doping” and is done during the production.
+      </p>
+      <div class="col-lg-1"></div>
+    </div>
+
+    <div class="row sub-atomic-particle-row" id="scene_0_5">
+      <div class="col-lg-4">
+        <h1>Intrinsic (pure) Si Lattice at Relatively Low Temperatures</h1>
+        <p>In a pure silicon lattice and especially at low temperatures there are very few free electrons.
+          This is because Si atom has 4 electrons at its outer shell and they are forming bonds with the 4 neighboring atoms.
+        </p>
+        <!-- <svg id="pe2-viz"></svg> -->
+        <!-- <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+    </div>
+    </div>
+
+
+    <div class="row sub-atomic-particle-row" id="scene_1">
+      <div class="col-lg-4">
+        <h1>Add Donor (n-Dope)</h1>
+        <p>A donor atom is an impurity atom with 5 electrons in its outer shell such as arsenic (As),
+          phosphorus (P), or bismuth (Bi). Click on any Si atom to replace it with a donor atom.
+          Why does the donor atom becomes positively charged? What about the overall charge in the lattice?
+          Is it positive, negative, or zero?
+
+        </p>
+
+        <!-- <svg id="pe2-viz"></svg> -->
+        <!-- <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+    </div>
+    </div>
+
+
+
+    <div class="row sub-atomic-particle-row" id="scene_2">
+      <div class="col-lg-4">
+        <h1>Add Acceptor (p-Dope)</h1>
+        <p>An acceptor atom is an impurity atom with 3 vallance electrons.
+          Click on any Si atom to replace it with an acceptor atom.
+          Why does the acceptor atom becomes negatively charged?
+          What about the overall charge in the lattice? Is it positive, negative, or zero?
+
+        </p>
+
+
+        <!-- <svg id="pe2-viz"></svg> -->
+
+    </div>
+    </div>
+
+
+    <div class="row sub-atomic-particle-row" id="scene_2_5">
+      <div class="col-lg-4">
+        <h1>Mobile and Fixed Charges </h1>
+        <p>We can now focus on electrons and holes (mobile charges) and ionized donor and accepter atoms (fixed charge).
+          In practice, we don’t normally use both dopants. Can you say why?
+        </p>
+        <p>Scroll back to add more acceptor doping or donor doping if you like.</p>
+
+        <!-- <svg id="pe2-viz"></svg> -->
+        <!-- <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p>
+        <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="row sub-atomic-particle-row" id="scene_3_1">
+
+      <div class="col-lg-4">
+        <h1>Not Too Cold Temperatures</h1>
+        <!-- <p>Change Temperature: (K)</p>
+
+        <input style="width: 100%;" type="range" min="270" max="320" value="290"
+        onchange="updateTemp_s4(this.value)">
+        <div class="sliderticks">
+          <p>270</p>
+
+          <p>320</p>
+        </div> -->
+        <p>So far, we were assuming that the temperature was relatively low and the thermal generation of electron-hole pairs was negligible. What happens at higher temperatures such as room temperature? </p>
+        <p>Use the slider to add donor atoms and wait till we reach equilibrium again. </p>
+        <p> Compared to intrinsic Si, what happens to the hole population when you n-dope? Why?</p>
+
+
+        <p>Donor Density (per cm<sup>3</sup>):  <output type="text" id = "add_e_text" val = "Math.round(add_e(this.value))"></p>
+        <input style="width: 100%;" type="range" min="80" max="120" value="80" id = "slider_1"
+        onchange="add_e(this.value)"  >
+        <div class="sliderticks">
+          <div>
+            <p>10<sub>8</sub></p>
+          </div>
+          <div>
+            <p>10<sub>12</sub></p>
+          </div>
+        </div>
+
+
+        <!-- <svg id="pe-viz"></svg> -->
+        <svg id="pe-viz_c"></svg>
+
+        <p>Each time you change the doping, the simulation is reset.  </p>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="row sub-atomic-particle-row" id="scene_3_2">
+
+      <div class="col-lg-4">
+        <h1>p-Doping at Room Temperature</h1>
+        <p>What about p-doping?</p>
+        <!-- <p>Temperature: (K)</p>
+
+        <input style="width: 100%;" type="range" min="270" max="320" value="290"
+        onchange="updateTemp_s4(this.value)">
+        <div class="sliderticks">
+          <p>270</p>
+
+          <p>320</p>
+        </div> -->
+
+        <p>Acceptor Density (per cm<sup>3</sup>):  <output type="text" id = "add_h_text" val = "Math.round(add_h(this.value))"> </p>
+        <input style="width: 100%;" type="range" min="80" max="120" value="0" id = "slider_2"
+        onchange="add_h(this.value)" >
+        <div class="sliderticks">
+          <div>
+            <p>10<sub>8</sub></p>
+          </div>
+          <div>
+            <p>10<sub>12</sub></p>
+          </div>
+        </div>
+
+
+
+
+        <!-- <svg id="pe-viz"></svg> -->
+        <svg id="pe-viz_c"></svg>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="row sub-atomic-particle-row" id="scene_3">
+
+      <div class="col-lg-4">
+        <h1>Doping Combined</h1>
+
+        <p>What if you use both n-doping and p-doping? </p>
+        <!-- <p>Temperature: (K)</p>
+
+        <input style="width: 100%;" type="range" min="270" max="320" value="290"
+        onchange="updateTemp_s4(this.value)">
+        <div class="sliderticks">
+          <p>270</p>
+
+          <p>320</p>
+        </div> -->
+
+        <p>Donor Density (per cm<sup>3</sup>):  <output type="text" id = "add_e_text_2" val = "Math.round(add_e(this.value))"></p>
+        <input style="width: 100%;" type="range" min="80" max="120" value="80"
+        onchange="add_e(this.value)" >
+        <div class="sliderticks">
+          <div>
+            <p>10<sub>8</sub></p>
+          </div>
+          <div>
+            <p>10<sub>12</sub></p>
+          </div>
+        </div>
+
+        <p>Acceptor Density (per cm<sup>3</sup>):  <output type="text" id = "add_h_text_2" val = "Math.round(add_h(this.value))"> </p>
+        <input style="width: 100%;" type="range" min="80" max="120" value="80"
+        onchange="add_h(this.value)" >
+        <div class="sliderticks">
+          <div>
+            <p>10<sub>8</sub></p>
+          </div>
+          <div>
+            <p>10<sub>12</sub></p>
+          </div>
+        </div>
+
+
+        <!-- <svg id="pe-viz"></svg> -->
+        <svg id="pe-viz_c"></svg>
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="col-lg-4">
+
+    <div class="col-lg-4">
+      <div id="visualization"></div>
+    </div>
+
+  </div>
+
+    <div class="row sub-atomic-particle-row" id="scene_4">
+
+
+
+
+
+    </div>
+
+
+  <div class="row real-life-row" id="scene_5">
+    <div class="col-lg-4">
+      <!-- <h1>Periodic Potential</h1>
+      <p>sjdbcljbascljabscl</p>
+      <svg id="pe2-viz"></svg>
+      <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+  </div>
+</div>
+
+<div class="row real-life-row" id="scene_6">
+  <div class="col-lg-4">
+    <!-- <h1>Effective Mass</h1>
+    <p>sjdbcljbascljabscl</p>
+    <svg id="effective"></svg>
+    <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+  </div>
+</div>
+
+<div class="row real-life-row" id="scene_7">
+  <div class="col-lg-4">
+    <!-- <h1>Effective Mass</h1>
+    <p>sjdbcljbascljabscl</p>
+    <svg id="effective2"></svg>
+    <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+  </div>
+</div>
+
+<div class="row real-life-row" id="scene_8">
+  <div class="col-lg-4">
+    <!-- <h1>Effective Mass</h1>
+    <p>sjdbcljbascljabscl</p>
+    <svg id="effective"></svg>
+    <p>sjdbcljbascljjdlqbdlsqabscl</p> -->
+  </div>
+</div>
+
+
+
+<!--
+    <div id="visualization">
+
+    </div> -->
+  </div>
+</body>
+<script>
+
+//   function resetFunc(){
+//     document.getElementById("add_e").reset();
+//   }
+
+// </script>
+
+</html>
